@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <center>
+        <h1 class="crud">
+            TOUR MUSEUM BOOKING
+        </h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First Name*</label><label class="validation-error hide" id="firstNameValidationError">This field is required.</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label>Last Name*</label><label class="validation-error hide" id="lastNameValidationError">This field is required.</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="lastName">
+                          <option value="philippines">Philippines</option>
+                          <option value="south korea">South Korea</option>
+                          <option value="switzerland">Switzerland</option>
+                          <option value="switzerland">Canada</option>
+                          <option value="switzerland">Japan</option>
+                          <option value="switzerland">France</option>
+                          <option value="switzerland">Greece</option>
+                          <option value="switzerland">Spain</option>
+                          <option value="switzerland">Italy</option>
+                          <option value="switzerland">New Zealand</option>
+                          <option value="switzerland">Australia</option>
+                          <option value="switzerland">Netherlands</option>
+                          <option value="switzerland">Turkey</option>
+                          <option value="switzerland">China</option>
+                          <option value="switzerland">Poland</option>
+                          <option value="switzerland">Thailand</option>
+
+                        </select>
+                    
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>first Name</th>
+                            <th>last Name</th>
+                            <th>country</th>
+                            <th>city</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>
+    <script src="scipt.js"></script>
+</body>
+
+</html>
